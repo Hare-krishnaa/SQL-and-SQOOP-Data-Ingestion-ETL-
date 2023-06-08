@@ -17,7 +17,7 @@ Hadoop automatically on daily basis.
 
 ### Problem Solution:
 
-## Environment : Cloud Platform (AWS RDS, AWS EMR) and Apache Airflow
+## Environment : Cloud Platform (AWS RDS, AWS EMR and AWS EC2)
 
 1. First set up the AWS RDS having MySql Engine.
 2. Then set up the AWS EMR cluster having Hadoop, Sqoop, Hive and Spark tools and start the cluster.
