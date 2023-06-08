@@ -136,9 +136,9 @@ COMMIT;
 
 START TRANSACTION;
 USE `E_commerce_db`;
-INSERT INTO `E_commerce_db`.`Sellers` (`SellerID`, `UserID`, `User_Type`,`CompanyName`, `ContactFName`, `ContactLName`, `ContactPosition`, `Phone`, `Email`, `Logo`) VALUES ('S6283', 'U2837','B', 'The Fun Shop', 'Frank', 'DiMaggio', 'Representative', '555-827-2832', 'f.dimaggio@funshop.com', NULL);
-INSERT INTO `E_commerce_db`.`Sellers` (`SellerID`, `UserID`, `User_Type`,`CompanyName`, `ContactFName`, `ContactLName`, `ContactPosition`, `Phone`, `Email`, `Logo`) VALUES ('S2193', 'U2738','B', 'Sell Your Junk Inc', 'Suzy', 'Gold', 'Owner of Company', '555-232-2381', 'suzy.gold@selljunk.com', NULL);
-INSERT INTO `E_commerce_db`.`Sellers` (`SellerID`, `UserID`, `User_Type`,`CompanyName`, `ContactFName`, `ContactLName`, `ContactPosition`, `Phone`, `Email`, `Logo`) VALUES ('S6381', 'U2883','B', 'Shop Til You Drop', 'Charlie', 'Sweet', 'Representative', '555-347-2381', 'sweet.charles@shop.com', NULL);
+INSERT INTO `E_commerce_db`.`Sellers` (`SellerID`, `UserID`, `User_Type`,`CompanyName`, `ContactFName`, `ContactLName`, `ContactPosition`, `Phone`, `Email`, `Logo`) VALUES ('S6283', 'U2837','S', 'The Fun Shop', 'Frank', 'DiMaggio', 'Representative', '555-827-2832', 'f.dimaggio@funshop.com', NULL);
+INSERT INTO `E_commerce_db`.`Sellers` (`SellerID`, `UserID`, `User_Type`,`CompanyName`, `ContactFName`, `ContactLName`, `ContactPosition`, `Phone`, `Email`, `Logo`) VALUES ('S2193', 'U2738','S', 'Sell Your Junk Inc', 'Suzy', 'Gold', 'Owner of Company', '555-232-2381', 'suzy.gold@selljunk.com', NULL);
+INSERT INTO `E_commerce_db`.`Sellers` (`SellerID`, `UserID`, `User_Type`,`CompanyName`, `ContactFName`, `ContactLName`, `ContactPosition`, `Phone`, `Email`, `Logo`) VALUES ('S6381', 'U2883','S', 'Shop Til You Drop', 'Charlie', 'Sweet', 'Representative', '555-347-2381', 'sweet.charles@shop.com', NULL);
 
 COMMIT;
 
