@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `E_commerce_db`.`Buyers` (
   `Phone` VARCHAR(15) NOT NULL DEFAULT 'xxx-xxx-xxxx',
   `Email` VARCHAR(45) NOT NULL,
    PRIMARY KEY (`UserID`, `USER_TYPE`),
-  CHECK (USER_TYPE = 'B'))
+  CHECK (USER_TYPE = 'S'))
 ENGINE = InnoDB;
 
 CREATE TABLE IF NOT EXISTS `E_commerce_db`.`Department` (
