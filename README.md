@@ -21,5 +21,5 @@ Hadoop automatically on daily basis.
 
 1. First set up the AWS RDS having MySql Engine.
 2. Then set up the AWS EMR cluster having Hadoop, Sqoop, Hive and Spark tools and start the cluster.
-3. Create another EC2 instance (t3.micro) and install the Apache Airflow for scheduling.
+3. Create another EC2 instance (t3.micro) and install the python3 and the Apache Airflow for scheduling.
     
