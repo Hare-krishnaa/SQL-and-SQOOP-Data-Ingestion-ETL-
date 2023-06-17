@@ -1,0 +1,38 @@
+
+Sqoop Jobs:- First create sqoop jobs of individual table and then schedule these jobs on daily basis through airflow.
+
+1. sqoop_job_Users = "sqoop job --create sqoop_job_Users -- import --connect jdbc:mysql://database-1.cl9e0ikrqh2h.ap-south-1.rds.amazonaws.com:3306/E_commerce_db --username admin --password-file file:///home/hadoop/sqoop1.pwd --table Users --target-dir /user/sqoop-output/Users --m 1 --incremental append --check-column DateCreated --last-value 0000-00-00"
+
+2. sqoop_job_Membership = "sqoop job --create sqoop_job_Membership -- import --connect jdbc:mysql://database-1.cl9e0ikrqh2h.ap-south-1.rds.amazonaws.com:3306/E_commerce_db --username admin --password-file file:///home/hadoop/sqoop1.pwd --table Membership --target-dir /user/sqoop-output/Membership --m 1 --incremental append --check-column DateMembership --last-value 0000:00:00-00:00:00"
+
+3. sqoop_job_Buyers = "sqoop job --create sqoop_job_Buyers -- import --connect jdbc:mysql://database-1.cl9e0ikrqh2h.ap-south-1.rds.amazonaws.com:3306/E_commerce_db --username admin --password-file file:///home/hadoop/sqoop1.pwd --table Buyers --target-dir /user/sqoop-output/Buyers --m 1 --incremental append --check-column DateBuyers --last-value 0000:00:00-00:00:00"
+
+4. sqoop_job_Department = "sqoop job --create sqoop_job_Department -- import --connect jdbc:mysql://database-1.cl9e0ikrqh2h.ap-south-1.rds.amazonaws.com:3306/E_commerce_db --username admin --password-file file:///home/hadoop/sqoop1.pwd --table Department --target-dir /user/sqoop-output/Department --m 1 --incremental append --check-column DateDepartment --last-value 0000:00:00-00:00:00"
+
+5. sqoop_job_Product = "sqoop job --create sqoop_job_Product -- import --connect jdbc:mysql://database-1.cl9e0ikrqh2h.ap-south-1.rds.amazonaws.com:3306/E_commerce_db --username admin --password-file file:///home/hadoop/sqoop1.pwd --table Product --target-dir /user/sqoop-output/Product --m 1 --incremental append --check-column DateProduct --last-value 0000:00:00-00:00:00"
+
+6. sqoop_job_Reviews = "sqoop job --create sqoop_job_Reviews -- import --connect jdbc:mysql://database-1.cl9e0ikrqh2h.ap-south-1.rds.amazonaws.com:3306/E_commerce_db --username admin --password-file file:///home/hadoop/sqoop1.pwd --table Reviews --target-dir /user/sqoop-output/Reviews --m 1 --incremental append --check-column DateReviews --last-value 0000:00:00-00:00:00"
+
+7. sqoop_job_Discount = "sqoop job --create sqoop_job_Discount -- import --connect jdbc:mysql://database-1.cl9e0ikrqh2h.ap-south-1.rds.amazonaws.com:3306/E_commerce_db --username admin --password-file file:///home/hadoop/sqoop1.pwd --table Discount --target-dir /user/sqoop-output/Discount --m 1 --incremental append --check-column DateDiscount --last-value 0000:00:00-00:00:00"
+
+8. sqoop_job_Offer = "sqoop job --create sqoop_job_Offer -- import --connect jdbc:mysql://database-1.cl9e0ikrqh2h.ap-south-1.rds.amazonaws.com:3306/E_commerce_db --username admin --password-file file:///home/hadoop/sqoop1.pwd --table Offer --target-dir /user/sqoop-output/Offer --m 1 --incremental append --check-column DateOffer --last-value 0000:00:00-00:00:00"
+
+9. sqoop_job_ShoppingCart = "sqoop job --create sqoop_job_ShoppingCart -- import --connect jdbc:mysql://database-1.cl9e0ikrqh2h.ap-south-1.rds.amazonaws.com:3306/E_commerce_db --username admin --password-file file:///home/hadoop/sqoop1.pwd --table ShoppingCart --target-dir /user/sqoop-output/ShoppingCart --m 1 --incremental append --check-column DateShoppingCart --last-value 0000:00:00-00:00:00"
+
+10. sqoop_job_Wishlist = "sqoop job --create sqoop_job_Wishlist -- import --connect jdbc:mysql://database-1.cl9e0ikrqh2h.ap-south-1.rds.amazonaws.com:3306/E_commerce_db --username admin --password-file file:///home/hadoop/sqoop1.pwd --table Wishlist --target-dir /user/sqoop-output/Wishlist --m 1 --incremental append --check-column DateWishlist --last-value 0000:00:00-00:00:00"
+
+11. sqoop_job_Sellers = "sqoop job --create sqoop_job_Sellers -- import --connect jdbc:mysql://database-1.cl9e0ikrqh2h.ap-south-1.rds.amazonaws.com:3306/E_commerce_db --username admin --password-file file:///home/hadoop/sqoop1.pwd --table Sellers --target-dir /user/sqoop-output/Sellers --m 1 --incremental append --check-column DateSellers --last-value 0000:00:00-00:00:00"
+
+12. sqoop_job_Shipper = "sqoop job --create sqoop_job_Shipper -- import --connect jdbc:mysql://database-1.cl9e0ikrqh2h.ap-south-1.rds.amazonaws.com:3306/E_commerce_db --username admin --password-file file:///home/hadoop/sqoop1.pwd --table Shipper --target-dir /user/sqoop-output/Shipper --m 1 --incremental append --check-column DateShipper --last-value 0000:00:00-00:00:00"
+
+13. sqoop_job_Orders = "sqoop job --create sqoop_job_Orders -- import --connect jdbc:mysql://database-1.cl9e0ikrqh2h.ap-south-1.rds.amazonaws.com:3306/E_commerce_db --username admin --password-file file:///home/hadoop/sqoop1.pwd --table Orders --target-dir /user/sqoop-output/Orders --m 1 --incremental append --check-column DateOrders --last-value 0000:00:00-00:00:00"
+
+14. sqoop_job_Payment = "sqoop job --create sqoop_job_Payment -- import --connect jdbc:mysql://database-1.cl9e0ikrqh2h.ap-south-1.rds.amazonaws.com:3306/E_commerce_db --username admin --password-file file:///home/hadoop/sqoop1.pwd --table Payment --target-dir /user/sqoop-output/Payment --m 1 --incremental append --check-column DatePayment --last-value 0000:00:00-00:00:00"
+
+15. sqoop_job_Payment_CreditCard = "sqoop job --create sqoop_job_Payment_CreditCard -- import --connect jdbc:mysql://database-1.cl9e0ikrqh2h.ap-south-1.rds.amazonaws.com:3306/E_commerce_db --username admin --password-file file:///home/hadoop/sqoop1.pwd --table Payment_CreditCard --target-dir /user/sqoop-output/Payment_CreditCard --m 1 --incremental append --check-column DatePaymentCreditCard --last-value 0000:00:00-00:00:00"
+
+16. sqoop_job_Address = "sqoop job --create sqoop_job_Address -- import --connect jdbc:mysql://database-1.cl9e0ikrqh2h.ap-south-1.rds.amazonaws.com:3306/E_commerce_db --username admin --password-file file:///home/hadoop/sqoop1.pwd --table Address --target-dir /user/sqoop-output/Address --m 1 --incremental append --check-column DateAddress --last-value 0000:00:00-00:00:00"
+
+17. sqoop_job_Orders_has_Product = "sqoop job --create sqoop_job_Orders_has_Product -- import --connect jdbc:mysql://database-1.cl9e0ikrqh2h.ap-south-1.rds.amazonaws.com:3306/E_commerce_db --username admin --password-file file:///home/hadoop/sqoop1.pwd --table Orders_has_Product --target-dir /user/sqoop-output/Orders_has_Product --m 1 --incremental append --check-column DateOrders_has_Product --last-value 0000:00:00-00:00:00"
+
+18. sqoop_job_Payment_Giftcard = "sqoop job --create sqoop_job_Payment_Giftcard -- import --connect jdbc:mysql://database-1.cl9e0ikrqh2h.ap-south-1.rds.amazonaws.com:3306/E_commerce_db --username admin --password-file file:///home/hadoop/sqoop1.pwd --table Payment_Giftcard --target-dir /user/sqoop-output/Payment_Giftcard --m 1 --incremental append --check-column DatePayment_Giftcard --last-value 0000:00:00-00:00:00"
